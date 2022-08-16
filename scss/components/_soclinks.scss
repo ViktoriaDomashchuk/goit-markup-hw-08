@@ -1,0 +1,33 @@
+.soclinks {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.soclinks__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    background-color: $light-bg-cl;
+    border-radius: 50%;
+    transition: background-color $animation;
+
+    &:hover,
+    &:focus {
+        background-color: $accent-txt-cl;
+    }
+}
+
+
+.soclinks__icons {
+    fill: #AFB1B8;
+    transition: fill $animation;
+
+    .soclinks__link:hover &,
+    .soclinks__link:focus & {
+        fill: $light-bg-cl;
+    }
+}

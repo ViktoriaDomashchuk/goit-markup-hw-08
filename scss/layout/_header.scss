@@ -1,0 +1,26 @@
+.header {
+    background-color: $light-bg-cl;
+
+    &__container {
+        @extend %container;
+            display: flex;
+            align-items: center;
+        }
+    
+
+    &__logo {
+        margin-right: 93px;
+        font-size: 26px;
+        line-height: 1.19em;
+        font-family: $font-style-raleway;
+        font-weight: 700;
+        color: #000000;
+    }
+}
+.header__border {
+    border-bottom: 1px solid #ECECEC;
+    
+}
+
+
+
