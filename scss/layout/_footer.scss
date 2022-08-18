@@ -1,14 +1,15 @@
 .footer {
     background-color: $dark-bg-cl;
     &__container {
+        @extend %container;
         display: flex;
         align-items: baseline;
         padding: 60px 215px;
         /*padding-top: 60px;
         padding-bottom: 60px;*/
         height: 252px;
-        margin-left: 215px;
-        margin-right: 215px;
+        /*margin-left: 215px;
+        margin-right: 215px;*/
     }
 
     &__contacts {

@@ -1,8 +1,8 @@
 .header {
+    @extend %container;
     background-color: $light-bg-cl;
 
     &__container {
-        @extend %container;
             display: flex;
             align-items: center;
         }
