@@ -19,7 +19,8 @@
   /*width: 1200px;*/
   padding-left: 15px;
   padding-right: 15px;
-  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 @media screen and (min-width: 480px) {
   .footer__container, .clients, .team, .skill, .features, .main__container, .header {
@@ -704,8 +705,14 @@ img {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .features {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 .features__list {
   display: -webkit-box;
@@ -716,8 +723,19 @@ img {
   gap: 30px;
 }
 .features__item {
-  width: 270px;
-  height: 251px;
+  width: 450px;
+  height: 226px;
+}
+@media screen and (min-width: 768px) {
+  .features__item {
+    width: 354px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .features__item {
+    width: 270px;
+    height: 251px;
+  }
 }
 .features__box {
   display: -webkit-inline-box;
@@ -730,9 +748,19 @@ img {
       -ms-flex-pack: center;
           justify-content: center;
   margin-bottom: 30px;
-  width: 270px;
+  width: 450px;
   height: 120px;
   background-color: #F5F4FA;
+}
+@media screen and (min-width: 768px) {
+  .features__box {
+    width: 354px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .features__box {
+    width: 270px;
+  }
 }
 .features__icons {
   display: -webkit-box;
@@ -755,6 +783,12 @@ img {
   text-transform: uppercase;
   color: #212121;
   margin-bottom: 10px;
+  text-align: center;
+}
+@media screen and (min-width: 1200px) {
+  .features__caption {
+    text-align: left;
+  }
 }
 .features__txt {
   font-size: 14px;
