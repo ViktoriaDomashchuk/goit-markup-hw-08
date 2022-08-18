@@ -1,15 +1,14 @@
 .main{
     &__container {
         @extend %container;
-        padding: 200px 0;
+        padding: 118px 0;
         margin-left: auto;
         margin-right: auto;
-        width: 1600px;
-        height: 600px;
         border: 1px solid #000000;
         background-repeat: no-repeat;
         background-position: center;
         background-color: $dark-bg-cl;
+        background-size: cover;
 
         @media  screen and (min-width: 480px) {
             background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/header/img@1x_sm.jpg);
@@ -28,26 +27,34 @@
         }
 
         @media screen and (min-width: 1200px) {
+            padding: 200px 0;
+            width: 1600px;
+            height: 600px;
+            background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/header/img@1x_lg.jpg);
+            }
             @media (min-device-pixel-ratio: 2),
                 (min-resolution: 192dpi),
                 (min-resolution: 2dppx) {
                     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/header/img@2x_lg.jpg);
                 }
-        background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/header/img@1x_lg.jpg);
-        }
     }
 
     &__title {
-        font-size: 44px;
+        width: 360px;
+        font-size: 26px;
         font-weight: 900;
         line-height: 1.36em;
         text-align: center;
         letter-spacing: 0.06em;
         text-transform: uppercase;
         color: $txt-color;
-        width: 696px;
         margin: auto;
         margin-bottom: 30px;
+
+        @media screen and (min-width: 1200px){
+        width: 696px;
+        font-size: 44px;
+        }
     }
     
     &__btn {
