@@ -845,6 +845,11 @@ img {
   color: #FFFFFF;
 }
 
+@media screen and (max-width: 1199px) {
+  .skill {
+    display: none;
+  }
+}
 .team {
   background-color: #F5F4FA;
   padding-top: 94px;

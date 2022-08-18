@@ -35,3 +35,8 @@
         color: $light-bg-cl;
     }
 }
+@media screen and (max-width: 1199px) {
+    .skill{
+        display: none;
+    }
+}
