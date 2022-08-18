@@ -1,29 +1,42 @@
 .clients {
     @extend %container;
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    @media screen and (min-width: 1200px) {
     padding-top: 94px;
     padding-bottom: 94px;
+    }
 
     &__list {
         display: flex;
         align-items: center;
         justify-content: center;
         gap: 30px;
+        flex-wrap: wrap;
     }
 }
 
 
 .clients__link {
     fill: #AFB1B8;
-    width: 170px;
+    width: 210px;
     height: 92px;
     border: 1px solid #AFB1B8;
     border-radius: 4px;
     background-color: $light-bg-cl;
     transition: fill $animation, border-color $animation;
     display: inline-flex;
-    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
+
+    @media screen and (min-width: 768px) {
+        width: 226px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        width: 170px;
+    }
     
     &:hover,
     &:focus {
