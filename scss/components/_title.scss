@@ -4,5 +4,9 @@
     line-height: 1.16em;
     text-align: center;
     letter-spacing: 0.03em;
+    margin-bottom: 30px;
+    
+    @media screen and (min-width:1200px) {
     margin-bottom: 50px;
+    }
 }

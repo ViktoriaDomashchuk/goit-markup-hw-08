@@ -1,9 +1,12 @@
 .team {
     @extend %container;
     background-color: #F5F4FA;
-    padding-top: 94px;
+    padding-top: 60px;
     padding-bottom: 94px;
     align-items: center;
+    @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    }
     
     &__list {
         display: flex;
@@ -11,6 +14,9 @@
         justify-content: center;
         flex-wrap: wrap;
         gap: 30px;
+    @media screen and (min-width: 1200px) {
+        display: flex;
+      }
     }
     
     &__card {
