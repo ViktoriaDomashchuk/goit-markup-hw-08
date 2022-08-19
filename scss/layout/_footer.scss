@@ -3,6 +3,7 @@
     &__container {
         @extend %container;
         display: block;
+        text-align: center;
         padding-top: 60px;
         padding-bottom: 60px;
         width: 480px;
@@ -14,13 +15,26 @@
             align-items: baseline;
             justify-content: center;
             padding: 60px 215px;
-            width: 1200px;
             height: 252px;
         }
     }
 
+&__content{
+    display: block;
+    
+    @media  screen and (min-width: 768px) {
+        display: flex;
+        gap: 165px;
+    }
+    @media screen and (min-width:1200px) {
+        display: flex;
+        gap: 70px;
+    }
+}
+
     &__contacts {
-        margin-right: 50px;
+        justify-content: flex-start;
+        padding-bottom: 60px;
     }
 
     &__logo {
@@ -38,12 +52,19 @@
     }
 
     &__address {
-        margin: auto;
+        display: block;
+        @media screen and (min-width:1200px) {
+            text-align: left;
+        }
     }
 
     &__item:not(:last-child) {
         display: block;
+        margin-bottom: 8px;
+
+        @media screen and (min-width:1200px) {
         margin-bottom: 9px;
+        }
     }
 
     &__txt {
