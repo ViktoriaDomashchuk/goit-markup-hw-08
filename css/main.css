@@ -1055,6 +1055,9 @@ img {
 }
 @media screen and (min-width: 1200px) {
   .footer__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     -webkit-box-align: baseline;
         -ms-flex-align: baseline;
             align-items: baseline;
@@ -1064,7 +1067,7 @@ img {
 .footer__content {
   display: block;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .footer__content {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1077,7 +1080,6 @@ img {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    gap: 70px;
   }
 }
 
@@ -1307,7 +1309,7 @@ display: block;
     display: -ms-flexbox;
     display: flex;
     margin-left: 93px;
-    text-align: left;
+    text-align: center;
   }
 }
 
