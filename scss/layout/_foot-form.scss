@@ -1,7 +1,11 @@
 .form-subscribe {
-    display: flex;
-    flex-direction: column;
-    margin-left: auto;
+    display: block;
+
+    @media  screen and (min-width: 1200px) {
+        display: flex;
+        flex-direction: column;
+        margin-left: auto;
+    }
     
     &__header {
         font-weight: 700;
@@ -13,10 +17,17 @@
     }
     
     &__wrap {
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        display: block;
+        /*align-items: center;
+        justify-content: center;*/ 
         margin-top: 20px;
+
+        @media screen and (min-width: 1200px) {
+        display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 20px;
+        }
     }
     
     &__input {
