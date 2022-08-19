@@ -8,7 +8,6 @@
     }
 
     @media screen and (min-width: 1200px) {
-        display: flex;
         margin-left: 93px;
         text-align: center;
     }
@@ -77,6 +76,6 @@
 
     @media screen and (min-width: 1200px) {
         display: inline-block;
-        padding-left: 0;
+        margin-left: 0;
     }
 }
