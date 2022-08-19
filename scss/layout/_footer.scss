@@ -52,55 +52,78 @@ display: block;
 justify-content: flex-start;
 padding-bottom: 60px;
 }
+
 .footer__logo {
 display: block;
 margin-bottom: 20px;
 font-weight: 700;
-font-size: 24px;
 line-height: 1.19em;
 color: $txt-color;
 font-family: $font-style-raleway;
+&-accent {
+        color: $accent-txt-cl;
+    }
+
+@media screen and (min-width: 480px) and (max-width: 1199px) {
+    display: block;
+    font-size: 24px;
+    text-align: center;
+}
 
 @media screen and (min-width: 1200px) {
+    display: inline-block;
+    padding-left: 0;
     font-size: 26px;
 }
 }   
-.footer__address {
+/*.footer__address {
 display: block;
 
 @media screen and (min-width:1200px) {
     text-align: left;
 }
+}*/
+.footer__list-address{
+    @media screen and (min-width: 480px) and (max-width: 1199px) {
+        text-align: center;
+    }
 }
-.footer__item:not(:last-child) {
-display: block;
-margin-bottom: 8px;
+.footer__item{
+    margin-top: 0px;
+    margin-bottom: 10px;
 
-@media screen and (min-width:1200px) {
-    margin-bottom: 9px;
+    &:last-child{
+        margin-bottom: 0px;
+    }
+
+    @media  screen and (min-width:1200px) {
+        padding-left: 0;
+    }
 }
-}
+
 .footer__txt {
+    display: block;
+    font-style: normal;
+    font-weight: 400;
     font-size: 14px;
     line-height: 1.71em;
     letter-spacing: 0.03em;
     color: $txt-color;
-    font-style: normal;
+    text-decoration: none;
 }
 
 .footer__link {
+    display: block;
+    font-style: normal;
+    font-weight: 500;
     font-size: 14px;
     line-height: 1.71em;
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
-    font-style: normal;
     transition: color $animation;
 
     &:hover,
     &:focus {
         color: $txt-color;
     }
-}
-.footer__logo-accent{
-    color: $accent-txt-cl;
 }
