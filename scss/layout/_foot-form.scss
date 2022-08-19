@@ -1,16 +1,19 @@
 .form-subscribe {
     @media screen and (min-width: 480px) {
-       text-align: center; 
-    }  
+        text-align: center;
+    }
+
     @media screen and (min-width: 768px) {
         text-align: center;
     }
-     @media screen and (min-width: 1200px) {
+
+    @media screen and (min-width: 1200px) {
         display: flex;
         margin-left: 93px;
         text-align: left;
     }
 }
+
 .form-subscribe__input {
     height: 50px;
     padding-left: 16px;
@@ -25,11 +28,12 @@
     @media screen and (min-width: 480px) and (max-width: 768px) {
         width: 450px;
     }
-    
+
     @media screen and (min-width: 1200px) {
         width: 360px;
     }
 }
+
 .form-subscribe__btn {
     display: flex;
     margin-top: 20px;
@@ -47,7 +51,7 @@
         justify-content: center;
         align-items: center;
     }
-    
+
 }
 
 .form-subscribe__icon {
@@ -56,23 +60,23 @@
     height: 24px;
     fill: $light-bg-cl;
 }
+
 .form-subscribe__header {
-margin-bottom: 20px;
-text-align: center;
-font-weight: 700;
-letter-spacing: 0.03em;
-text-transform: uppercase;
-color: $light-bg-cl;
-font-size: 14px;
-line-height: 16px;
-@media screen and (min-width:480px) and (max-width:1199px) {
-    display: block;
-}
-@media screen and (min-width: 1200px) {
-    display: inline-block;
-    padding-left: 0;
-}
-}
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: 700;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: $light-bg-cl;
+    font-size: 14px;
+    line-height: 16px;
 
+    @media screen and (min-width:480px) and (max-width:1199px) {
+        display: block;
+    }
 
-
+    @media screen and (min-width: 1200px) {
+        display: inline-block;
+        padding-left: 0;
+    }
+}
