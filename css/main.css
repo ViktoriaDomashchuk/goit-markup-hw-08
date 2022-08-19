@@ -1030,22 +1030,6 @@ img {
   padding-bottom: 60px;
 }
 
-.footer__container {
-  /*
-  display: block;
-  text-align: center;
-  width: 480px;
-  height: 603px;*/
-  /*margin-left: 215px;
-  margin-right: 215px;*/
-  /*@media screen and (min-width: 1200px) {
-      display: flex;
-      align-items: baseline;
-      justify-content: center;
-      padding: 60px 215px;
-      height: 252px;
-  }*/
-}
 @media screen and (min-width: 480px) {
   .footer__container {
     -webkit-box-orient: vertical;
