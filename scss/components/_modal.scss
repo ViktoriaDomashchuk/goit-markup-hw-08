@@ -20,8 +20,8 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) scale(1) rotate(0);
-    width: 528px;
-    height: 581px;
+    width: 450px;
+    height: 609px;
     padding: 40px;
     background-color: #fff;
     border-radius: 4px;
@@ -33,11 +33,16 @@
         opacity: 0;
         transform: translate(-50%, -50%) scale(0.3) rotate(0.5turn);
     }
+
+    @media screen and (min-width: 1200px) {
+        width: 528px;
+        height: 581px;
+    }
 }
 .modal__btn {
     position: absolute;
-    top: 10px;
-    right: 10px;
+    top: 8px;
+    right: 8px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -48,6 +53,11 @@
     border: 1px solid rgba(0, 0, 0, 0.1);
     background-color: transparent;
     cursor: pointer;
+
+    @media screen and (min-width: 1200px) {
+    top: 10px;
+        right: 10px;
+    }
 }
 
 .modal__icon {
@@ -57,7 +67,8 @@
     transition: fill $animation;
 
     .modal__btn:hover &,
-    .modal__btn:focus & {
+    .modal__btn:focus &,
+    .modal__btn:active & {
         fill: $accent-txt-cl;
     }
 }
@@ -91,12 +102,17 @@
     padding: 10px 52px;
 }
 .modal__text {
-    font-size: 14px;
+    font-size: 12px;
     user-select: none;
     text-underline-position: under;
-    line-height: 24px;
+    line-height: 14px;
     letter-spacing: 0.03em;
     color: $secondary-txt-cl;
+    
+    @media screen and (min-width:1200px) {
+    font-size: 14px;
+    line-height: 24px;
+    }
 }
 .modal__wrap {
     position: relative;
