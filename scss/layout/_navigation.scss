@@ -41,7 +41,9 @@
         height: 4px;
         border-radius: 4px;
         background-color: $accent-txt-cl;
-    
+    @media screen and (max-width: 767px) {
+        display: none;
+    }
     }
 }
 

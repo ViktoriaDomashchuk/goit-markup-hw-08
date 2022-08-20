@@ -795,6 +795,11 @@ img {
   border-radius: 4px;
   background-color: #2196F3;
 }
+@media screen and (max-width: 767px) {
+  .nav__link--current::after {
+    display: none;
+  }
+}
 
 .nav__list-contacts {
   display: -webkit-box;
