@@ -28,16 +28,14 @@
 .projects__link {
     transition: box-shadow $animation;
 
-    &:active,
         &:hover,
         &:focus{
         display: block;
         box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
     }
-        &:active,
         &:hover,
         &:focus .projects__card--overlay{
-transform: translateY(0);
+        transform: translateY(0);
     }
 }
 .projects__card {
