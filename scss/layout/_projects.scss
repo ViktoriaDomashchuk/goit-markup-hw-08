@@ -1,53 +1,68 @@
 .projects {
-    display: flex;
     margin: 0 auto;
-    flex-wrap: wrap;
-    gap: 30px;
-    width: 1170px;
-    
-    &__item {
-        width: 370px;
+    @media screen and (min-width: 768px) {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
     }
+   
+}
+.projects__item {
+    max-width: 450px;
+    margin-bottom: 30px;
+    @media screen and (min-width: 768px) {
+        max-width: 354px;
+        margin-bottom: 0;
+    }
+    @media screen and (min-width: 1200px) {
+        max-width: 370px;
+    }
+    
 }
 
 .projects__link {
     transition: box-shadow $animation;
-    
+
     &:hover,
     &:focus {
         display: block;
         box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
     }
+    &:hover .projects__card--overlay{
+transform: translateY(0);
+    }
 }
-
 .projects__card {
     position: relative;
     overflow: hidden;
-    
-    &--overlay {
-        position: absolute;
-        top: 0;
-        left: 0;
-        transform: translateY(294px);
-        padding: 63px 24px;
-        width: 370px;
-        height: 294px;
-        background-color: rgba(33, 150, 243, 0.9);
-        backdrop-filter: blur(1px);
-        transition: transform $animation;
-    }
-    
-    .projects__link:hover &--overlay {
-        transform: translateY(0);
+
 }
+.projects__card--overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    transform: translateY(112%);
+    background-color: rgba(33, 150, 243, 0.9);   
+    transition: transform $animation;
 }
+/*padding: 63px 24px;
+backdrop-filter: blur(1px);
+    height: 294px;*/
+/*.projects__link:hover &--overlay {
+    transform: translateY(0);
+}*/
+
 
 .projects__txt {
+    font-weight: 400px;
     font-size: 18px;
     line-height: 28px;
     text-align: left;
     letter-spacing: 0.03em;
     color: $txt-color;
+    padding: 63px 24px;
+    user-select: none;
 }
 
 .projects__desc {
@@ -65,6 +80,7 @@
 }
 
 .projects__text {
+    font-weight: 400px;
     font-size: 16px;
     line-height: 1.875em;
     letter-spacing: 0.03em;
