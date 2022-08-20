@@ -1619,6 +1619,11 @@ img {
     /*width: 450px;*/
   }
 }
+@media screen and (min-width: 768px) {
+  .form-subscribe__input {
+    width: 450px;
+  }
+}
 @media screen and (min-width: 1200px) {
   .form-subscribe__input {
     width: 360px;
