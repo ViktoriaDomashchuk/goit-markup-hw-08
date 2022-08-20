@@ -84,10 +84,10 @@ img {
   background-color: #2196F3;
   border: none;
   cursor: pointer;
-  -webkit-transition: background-color 800ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 800ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: background-color 800ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 800ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: background-color 800ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 800ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: background-color 800ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 800ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 800ms cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .btn:hover, .btn:focus {
   background-color: #188CE8;
@@ -140,8 +140,8 @@ img {
   height: 44px;
   background-color: #FFFFFF;
   border-radius: 50%;
-  -webkit-transition: background-color 800ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: background-color 800ms cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .soclinks__link:hover, .soclinks__link:focus {
   background-color: #2196F3;
@@ -149,8 +149,8 @@ img {
 
 .soclinks__icons {
   fill: #AFB1B8;
-  -webkit-transition: fill 800ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: fill 800ms cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .soclinks__link:hover .soclinks__icons, .soclinks__link:focus .soclinks__icons {
   fill: #FFFFFF;
@@ -222,8 +222,8 @@ img {
   height: 44px;
   background-color: rgba(255, 255, 255, 0.1);
   border-radius: 50%;
-  -webkit-transition: background-color 800ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: background-color 800ms cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .socials__link:hover, .socials__link:focus {
   background-color: #2196F3;
@@ -244,8 +244,8 @@ img {
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.25);
-  -webkit-transition: opacity 800ms cubic-bezier(0.4, 0, 0.2, 1), visibility 800ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: opacity 800ms cubic-bezier(0.4, 0, 0.2, 1), visibility 800ms cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .backdrop.is-hidden {
   opacity: 0;
@@ -303,8 +303,8 @@ img {
   width: 18px;
   height: 18px;
   fill: currentColor;
-  -webkit-transition: fill 800ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: fill 800ms cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal__btn:hover .modal__icon, .modal__btn:focus .modal__icon {
   fill: #2196F3;
@@ -397,8 +397,8 @@ img {
   border-radius: 4px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   outline: transparent;
-  -webkit-transition: border-color 800ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: border-color 800ms cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal__input:focus {
   border-color: #2196F3;
@@ -412,8 +412,8 @@ img {
   border-radius: 4px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   outline: transparent;
-  -webkit-transition: border-color 800ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: border-color 800ms cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal__message:focus {
   border-color: #2196F3;
@@ -468,8 +468,8 @@ img {
   position: absolute;
   bottom: 11px;
   left: 15px;
-  -webkit-transition: fill 800ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: fill 800ms cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal__input:focus ~ .modal__box {
   fill: #2196F3;
@@ -526,8 +526,8 @@ img {
   background-size: contain;
   background-origin: border-box;
   margin-right: 8px;
-  -webkit-transition: background-image 800ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: background-image 800ms cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition: background-image 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-image 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal__check:checked:focus + .modal__checkbox {
   background-image: url(../images/icons/icon-check.svg);
@@ -574,6 +574,11 @@ img {
   border: none;
   cursor: pointer;
 }
+@media screen and (min-width: 768px) {
+  .menu__btn {
+    display: none;
+  }
+}
 
 .menu-icon {
   fill: #000;
@@ -586,6 +591,103 @@ img {
   background-color: #FFFFFF;
   width: 100%;
   height: 100%;
+  z-index: 100;
+}
+@media screen and (min-width: 768px) {
+  .menu-overlay {
+    display: none;
+  }
+}
+
+.menu-container {
+  width: 100%;
+  height: 100%;
+  padding: 48px 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+@media screen and (min-width: 768px) {
+  .menu-container {
+    display: none;
+  }
+}
+
+.mobile-nav {
+  margin-bottom: auto;
+}
+
+.mobile-nav-item {
+  margin-bottom: 32px;
+}
+
+.mobile-nav-link {
+  font-family: Roboto, sans-serif;
+  font-weight: 500px;
+  font-size: 40px;
+  line-height: 47px;
+  letter-spacing: 2%;
+  color: #212121;
+  /*&--current {
+      color: $accent-txt-cl;
+      position: relative;
+  }*/
+}
+.mobile-nav-link:active {
+  color: #2196F3;
+}
+
+.mobile-address {
+  margin-bottom: 64px;
+}
+
+.mobile-address-item {
+  margin-bottom: 32px;
+}
+
+.mobile-address-link {
+  font-family: Roboto, sans-serif;
+  font-weight: 500px;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: 2%;
+  color: #757575;
+}
+.mobile-address-link:active {
+  color: #2196F3;
+  font-size: 34px;
+}
+
+.mobile-soclinks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 10px;
+}
+
+.mobile-soclinks-link {
+  font-family: Roboto, sans-serif;
+  font-weight: 500px;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 2%;
+  color: #2196F3;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 10px;
+}
+.mobile-soclinks-item:not(:last-child) .mobile-soclinks-link::after {
+  content: "";
+  display: block;
+  width: 1px;
+  background-color: rgba(33, 33, 33, 0.2);
 }
 
 /*layout styles*/
@@ -636,8 +738,8 @@ img {
   line-height: 1.33em;
   letter-spacing: 0.02em;
   color: #212121;
-  -webkit-transition: color 800ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: color 800ms cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   display: block;
   padding: 32px 0;
   font-size: 14px;
@@ -697,8 +799,8 @@ img {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-transition: color 800ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: color 800ms cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   font-size: 14px;
 }
 .nav__link-contacts:hover, .nav__link-contacts:focus {
@@ -1023,8 +1125,8 @@ img {
   border: 1px solid #AFB1B8;
   border-radius: 4px;
   background-color: #FFFFFF;
-  -webkit-transition: fill 800ms cubic-bezier(0.4, 0, 0.2, 1), border-color 800ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: fill 800ms cubic-bezier(0.4, 0, 0.2, 1), border-color 800ms cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -1201,8 +1303,8 @@ display: block;
   line-height: 1.71em;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
-  -webkit-transition: color 800ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: color 800ms cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer__link:hover, .footer__link:focus {
   color: #FFFFFF;
@@ -1234,10 +1336,10 @@ display: block;
   border: none;
   padding: 6px 22px;
   border-radius: 4px;
-  -webkit-transition: background-color 800ms cubic-bezier(0.4, 0, 0.2, 1), color 800ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 800ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: background-color 800ms cubic-bezier(0.4, 0, 0.2, 1), color 800ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 800ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: box-shadow 800ms cubic-bezier(0.4, 0, 0.2, 1), background-color 800ms cubic-bezier(0.4, 0, 0.2, 1), color 800ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: box-shadow 800ms cubic-bezier(0.4, 0, 0.2, 1), background-color 800ms cubic-bezier(0.4, 0, 0.2, 1), color 800ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 800ms cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .filters__btn:hover, .filters__btn:focus {
   -webkit-box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
@@ -1267,10 +1369,10 @@ display: block;
 }
 
 .projects__link {
-  -webkit-transition: -webkit-box-shadow 800ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: -webkit-box-shadow 800ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: box-shadow 800ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: box-shadow 800ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 800ms cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition: -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .projects__link:hover, .projects__link:focus {
   display: block;
@@ -1294,10 +1396,10 @@ display: block;
   background-color: rgba(33, 150, 243, 0.9);
   -webkit-backdrop-filter: blur(1px);
           backdrop-filter: blur(1px);
-  -webkit-transition: -webkit-transform 800ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: -webkit-transform 800ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: transform 800ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: transform 800ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 800ms cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .projects__link:hover .projects__card--overlay {
   -webkit-transform: translateY(0);

@@ -10,6 +10,10 @@ background-color: transparent;
 border: none;
 cursor: pointer;
 
+@media screen and (min-width: 768px) {
+    display: none;
+}
+
 }
 .menu-icon{
     fill: #000;
@@ -21,4 +25,84 @@ cursor: pointer;
     background-color: $light-bg-cl;
     width: 100%;
     height: 100%;
+    z-index: 100;
+
+    @media screen and (min-width:768px) {
+        display: none;
+    }
 }
+.menu-container{
+    width: 100%;
+    height: 100%;
+    padding: 48px 40px;
+    display: flex;
+    flex-direction: column;
+
+    @media screen and (min-width:768px) {
+        display: none;
+    }
+}
+.mobile-nav{
+    margin-bottom: auto;
+}
+.mobile-nav-item{
+    margin-bottom: 32px;
+}
+.mobile-nav-link{
+    font-family: $font-style-roboto;
+    font-weight: 500px;
+    font-size: 40px;
+    line-height: 47px;
+    letter-spacing:2%;
+    color: $main-txt-cl;
+    &:active{
+    color: $accent-txt-cl;
+    }
+        /*&--current {
+            color: $accent-txt-cl;
+            position: relative;
+        }*/
+}
+.mobile-address{
+    margin-bottom: 64px;
+}
+.mobile-address-item{
+    margin-bottom: 32px;
+}
+.mobile-address-link{
+    font-family: $font-style-roboto;
+    font-weight: 500px;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: 2%;
+    color: $secondary-txt-cl;
+
+    &:active{
+        color: $accent-txt-cl;
+        font-size: 34px;
+    }
+}
+
+.mobile-soclinks{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.mobile-soclinks-link {
+    font-family: $font-style-roboto;
+    font-weight: 500px;
+    font-size: 18px;
+    line-height: 22px; 
+    letter-spacing: 2%;
+    color: $accent-txt-cl;
+    display: flex;
+    gap: 10px;
+    .mobile-soclinks-item:not(:last-child) &::after{
+        content: "";
+        display: block;
+        width: 1px;
+        background-color: rgba(33, 33, 33, 0.2);
+    }
+}
+
