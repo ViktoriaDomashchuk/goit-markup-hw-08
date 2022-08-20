@@ -66,9 +66,9 @@ transform: translateY(0);
     transition: transform $animation;
     backdrop-filter: blur(1px);
     padding: 77px 24px;
-    @media screen and (min-width: 768px) {
+    /*@media screen and (min-width: 768px) {
         padding: 49px 24px ;
-    }
+    }*/
 }
 /*padding: 63px 24px;
 

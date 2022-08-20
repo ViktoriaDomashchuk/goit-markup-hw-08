@@ -1523,11 +1523,9 @@ display: block;
   -webkit-backdrop-filter: blur(1px);
           backdrop-filter: blur(1px);
   padding: 77px 24px;
-}
-@media screen and (min-width: 768px) {
-  .projects__card--overlay {
-    padding: 49px 24px;
-  }
+  /*@media screen and (min-width: 768px) {
+      padding: 49px 24px ;
+  }*/
 }
 
 /*padding: 63px 24px;
