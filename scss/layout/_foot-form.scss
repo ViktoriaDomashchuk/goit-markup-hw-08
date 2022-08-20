@@ -9,7 +9,7 @@
 
     @media screen and (min-width: 1200px) {
         margin-left: 93px;
-        text-align: center;
+        text-align: left;
     }
 }
 
@@ -64,11 +64,11 @@
     margin-bottom: 20px;
     text-align: center;
     font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: $light-bg-cl;
-    font-size: 14px;
-    line-height: 16px;
 
     @media screen and (min-width:480px) and (max-width:1199px) {
         display: block;
