@@ -41,8 +41,14 @@ display: block;
 }
 
 .footer__contacts {
-justify-content: flex-start;
+justify-content: center;
 padding-bottom: 60px;
+@media screen and (min-width: 768px) {
+    justify-content: flex-start;
+}
+@media screen and (min-width:1200px) {
+    text-align: left;
+}
 }
 
 .footer__logo {
@@ -70,7 +76,7 @@ font-family: $font-style-raleway;
 }   
 
 .footer__list-address{
-    @media screen and (min-width: 480px) and (max-width: 1199px) {
+    @media screen and (min-width: 480px) and (max-width: 1199px) { 
         text-align: center;
     }
 }
