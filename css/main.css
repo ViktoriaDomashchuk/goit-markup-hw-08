@@ -803,6 +803,15 @@ img {
   margin-left: auto;
   gap: 30px;
 }
+@media screen and (min-width: 480px) and (max-width: 1199px) {
+  .nav__list-contacts {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 10px;
+  }
+}
 @media screen and (max-width: 767px) {
   .nav__list-contacts {
     display: none;
