@@ -22,10 +22,14 @@ cursor: pointer;
 }
 .menu-icon{
     fill: #000;
+    &:active, &:hover, &:focus {
+            fill: $accent-txt-cl;
+        }
 }
 .menu-close-icon {
     fill: #000;
-    &:active{
+    &:active, &:hover,
+        &:focus{
         fill: $accent-txt-cl;
     }
 }
@@ -84,13 +88,10 @@ transform: translateX(0);
     line-height: 47px;
     letter-spacing:2%;
     color: $main-txt-cl;
-    &:active{
+    &:active, &:hover,
+     &:focus{
     color: $accent-txt-cl;
     }
-        /*&--current {
-            color: $accent-txt-cl;
-            position: relative;
-        }*/
 }
 .mobile-address{
     margin-bottom: 64px;
@@ -106,7 +107,9 @@ transform: translateX(0);
     letter-spacing: 2%;
     color: $secondary-txt-cl;
 
-    &:active{
+    &:active,
+        &:hover,
+        &:focus{
         color: $accent-txt-cl;
         font-size: 34px;
     }

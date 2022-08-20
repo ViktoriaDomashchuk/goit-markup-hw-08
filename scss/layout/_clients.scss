@@ -38,8 +38,9 @@
         width: 170px;
     }
     
-    &:hover,
-    &:focus {
+        &:active,
+        &:hover,
+        &:focus {
         fill: #2196F3;
         border-color: #2196F3;
     }

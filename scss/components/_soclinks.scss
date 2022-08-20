@@ -15,8 +15,9 @@
     border-radius: 50%;
     transition: background-color $animation;
 
-    &:hover,
-    &:focus {
+    &:active,
+        &:hover,
+        &:focus {
         background-color: $accent-txt-cl;
     }
 }
@@ -27,7 +28,8 @@
     transition: fill $animation;
 
     .soclinks__link:hover &,
-    .soclinks__link:focus & {
+    .soclinks__link:focus &,
+    .soclinks__link:active {
         fill: $light-bg-cl;
     }
 }
