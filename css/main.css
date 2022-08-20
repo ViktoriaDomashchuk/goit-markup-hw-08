@@ -558,6 +558,23 @@ img {
   color: #2196F3;
 }
 
+.menu__btn {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 40px;
+  height: 40px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
 /*layout styles*/
 .header {
   background-color: #FFFFFF;
@@ -594,6 +611,11 @@ img {
   display: flex;
   margin-left: auto;
   gap: 50px;
+}
+@media screen and (max-width: 767px) {
+  .nav {
+    display: none;
+  }
 }
 
 .nav__link {
@@ -632,6 +654,11 @@ img {
   display: flex;
   margin-left: auto;
   gap: 30px;
+}
+@media screen and (max-width: 767px) {
+  .nav__list-contacts {
+    display: none;
+  }
 }
 
 .nav__item-contacts {
