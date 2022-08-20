@@ -24,7 +24,7 @@
         <a href="" class="link header__logo">
           <span lang="en" class="logo-accent">Web</span>Studio
         </a>
-        <button class="menu__btn" type="button">
+        <button class="menu__btn" type="button" data-menu-open>
           <svg class="menu-icon" width="40" height="40">
             <use href="./images/icons.svg#menu-burger"></use>
           </svg>
@@ -660,8 +660,13 @@
       </div>
     </div> -->
     <!--Mobile-menu-->
-    <div class="menu-overlay">
+    <div class="menu-overlay is-open" data-menu>
       <div class="menu-container">
+        <button class="menu-close-btn" type="button" data-menu-close>
+          <svg class="manu-close-icon" width="40" height="40">
+            <use href="./images/icons.svg#menu-close"></use>
+          </svg>
+        </button>
         <ul class="mobile-nav list">
           <li class="mobile-nav-item">
             <a href="" class="mobile-nav-link mobile-nav-link--current link">Студія</a>

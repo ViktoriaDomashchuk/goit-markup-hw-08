@@ -27,8 +27,19 @@ cursor: pointer;
     height: 100%;
     z-index: 100;
 
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+
+    transition: opacity $animation, visibility $animation;
+
     @media screen and (min-width:768px) {
         display: none;
+    }
+    &.is-open{
+        opacity: 1;
+        pointer-events: initial;
+        visibility: visible;
     }
 }
 .menu-container{
@@ -37,6 +48,13 @@ cursor: pointer;
     padding: 48px 40px;
     display: flex;
     flex-direction: column;
+    
+    transform: translateX(100%);
+    transition: transform $animation;
+
+    .menu-overlay.is-open &{
+transform: translateX(0);
+    }
 
     @media screen and (min-width:768px) {
         display: none;
