@@ -575,6 +575,19 @@ img {
   cursor: pointer;
 }
 
+.menu-icon {
+  fill: #000;
+}
+
+.menu-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #FFFFFF;
+  width: 100%;
+  height: 100%;
+}
+
 /*layout styles*/
 .header {
   background-color: #FFFFFF;
