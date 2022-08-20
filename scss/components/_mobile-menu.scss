@@ -1,4 +1,5 @@
 .menu__btn{
+    margin-left: auto;
 display: inline-flex;
 align-items: center;
 justify-content: center;
@@ -13,10 +14,20 @@ cursor: pointer;
 @media screen and (min-width: 768px) {
     display: none;
 }
-
+.menu-overlay & {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
 }
 .menu-icon{
     fill: #000;
+}
+.menu-close-icon {
+    fill: #000;
+    &:active{
+        fill: $accent-txt-cl;
+    }
 }
 .menu-overlay{
     position: fixed;

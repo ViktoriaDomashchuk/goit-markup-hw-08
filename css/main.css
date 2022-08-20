@@ -559,6 +559,7 @@ img {
 }
 
 .menu__btn {
+  margin-left: auto;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -579,9 +580,21 @@ img {
     display: none;
   }
 }
+.menu-overlay .menu__btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
 
 .menu-icon {
   fill: #000;
+}
+
+.menu-close-icon {
+  fill: #000;
+}
+.menu-close-icon:active {
+  fill: #2196F3;
 }
 
 .menu-overlay {
