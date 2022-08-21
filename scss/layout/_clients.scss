@@ -33,7 +33,7 @@ flex-basis: calc((100% - $indent * (2 - 1)) / 2);
 
 .clients__link {
     fill: #AFB1B8;
-    width: 210px;
+    width: 130px;
     height: 92px;
     border: 1px solid #AFB1B8;
     border-radius: 4px;
@@ -42,7 +42,9 @@ flex-basis: calc((100% - $indent * (2 - 1)) / 2);
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    
+    @media screen and (min-width:480px) {
+        width: 210px;
+    }
 
     @media screen and (min-width: 768px) {
         width: 226px;

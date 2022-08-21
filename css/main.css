@@ -1235,7 +1235,7 @@ img {
 
 .clients__link {
   fill: #AFB1B8;
-  width: 210px;
+  width: 130px;
   height: 92px;
   border: 1px solid #AFB1B8;
   border-radius: 4px;
@@ -1251,6 +1251,11 @@ img {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+@media screen and (min-width: 480px) {
+  .clients__link {
+    width: 210px;
+  }
 }
 @media screen and (min-width: 768px) {
   .clients__link {
