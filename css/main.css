@@ -1032,7 +1032,7 @@ img {
 }
 .features__caption {
   font-weight: 700;
-  font-size: 14px;
+  font-size: 10px;
   line-height: 1.14em;
   letter-spacing: 0.03em;
   text-transform: uppercase;
@@ -1040,16 +1040,26 @@ img {
   margin-bottom: 10px;
   text-align: center;
 }
+@media screen and (min-width: 480px) {
+  .features__caption {
+    font-size: 14px;
+  }
+}
 @media screen and (min-width: 1200px) {
   .features__caption {
     text-align: left;
   }
 }
 .features__txt {
-  font-size: 14px;
+  font-size: 10px;
   line-height: 1.71em;
   letter-spacing: 0.03em;
   color: #757575;
+}
+@media screen and (min-width: 480px) {
+  .features__txt {
+    font-size: 14px;
+  }
 }
 
 .skill {
