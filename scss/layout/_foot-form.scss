@@ -24,7 +24,8 @@
     color: $txt-color;
     box-shadow: 0px, 4px rgba(0, 0, 0, 0.15);
     border: 1px solid rgba(255, 255, 255, 0.3);
-
+    width: 100%;
+    
     @media screen and (min-width: 480px)  {
         width: 100%;
     }
