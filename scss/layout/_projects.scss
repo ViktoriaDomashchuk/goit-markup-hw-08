@@ -4,6 +4,7 @@
     gap: 30px;
     max-width: 450px;
     margin: 0 auto;
+    padding-bottom: 60px;
     
     @media screen and (min-width: 768px) {
         max-width: 738px;
@@ -12,6 +13,7 @@
     
     @media screen and (min-width: 1200px) {
         max-width: 1170px;
+        padding-bottom: 94px;
     }
    
 }
@@ -59,6 +61,7 @@
     transition: transform $animation;
     backdrop-filter: blur(1px);
     padding: 110px 24px;
+    
     @media screen and (min-width: 480px) {
         padding: 117px 24px;
     }

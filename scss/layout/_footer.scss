@@ -5,6 +5,7 @@
 }
 .footer__container {
     @extend %container;
+    flex-direction: column;
     @media screen and (min-width: 480px){
         flex-direction: column;
     }
