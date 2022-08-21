@@ -58,9 +58,12 @@
     background-color: rgba(33, 150, 243, 0.9);   
     transition: transform $animation;
     backdrop-filter: blur(1px);
-    padding: 110px 24px;
+    padding: 120px 24px;
+    @media screen and (min-width: 480px) {
+        padding: 117px 24px;
+    }
     @media screen and(min-width: 768px) {
-            padding: 70px 24px;
+            padding: 80px 24px;
     }
 }
 .projects__txt {
