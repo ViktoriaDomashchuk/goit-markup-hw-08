@@ -1,7 +1,9 @@
-.skill {
-    @extend %container;
-    padding-top: 0;
-    padding-bottom: 94px;
+.skill {   
+    &__container{
+        @extend %container;
+        padding-top: 0;
+        padding-bottom: 94px;
+    }
 
     &__list {
         display: flex;

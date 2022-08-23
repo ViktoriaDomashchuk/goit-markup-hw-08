@@ -1,9 +1,9 @@
 .footer {
     background-color: $dark-bg-cl; 
-    padding-top: 60px;
-    padding-bottom: 60px;
 }
 .footer__container {
+    padding-top: 60px;
+    padding-bottom: 60px;
     @extend %container;
     flex-direction: column;
     @media screen and (min-width: 480px){
@@ -18,7 +18,7 @@
     @media screen and (min-width:1200px) {
         display: flex;
         align-items: baseline;
-        justify-content: flex-start;
+        justify-content: center;
     }
 }
 
@@ -45,6 +45,7 @@ padding-bottom: 60px;
 }
 @media screen and (min-width:1200px) {
     text-align: left;
+    padding-bottom: 0;
 }
 }
 

@@ -232,9 +232,11 @@
     background-origin: border-box;
     margin-right: 8px;
     transition: background-image $animation;
+    
 
     .modal__check:checked:focus+& {
         background-image: url(../images/icons/icon-check.svg);
+        
     }
 
     .modal__check:focus + & {

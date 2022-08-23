@@ -83,10 +83,10 @@ transform: translateX(0);
 }
 .mobile-nav-link{
     font-family: $font-style-roboto;
-    font-weight: 500px;
+    font-weight: 500;
     font-size: 40px;
     line-height: 47px;
-    letter-spacing:2%;
+    letter-spacing:  0.02em;
     color: $main-txt-cl;
     &:active, &:hover,
      &:focus{
@@ -99,37 +99,51 @@ transform: translateX(0);
 .mobile-address-item{
     margin-bottom: 32px;
 }
-.mobile-address-link{
+.mobile-address-tel{
+font-family: $font-style-roboto;
+font-weight: 500; 
+font-size: 24px;
+line-height: 40px; 
+letter-spacing: 0.02em;
+color: $accent-txt-cl;
+@media screen and (min-width: 480px) {
+    font-size: 34px;
+}
+}
+.mobile-address-mail{
     font-family: $font-style-roboto;
     font-weight: 500px;
-    font-size: 24px;
+    font-size: 16px;
     line-height: 28px;
-    letter-spacing: 2%;
+    letter-spacing: 0.02em;
     color: $secondary-txt-cl;
-
-    &:active,
-        &:hover,
-        &:focus{
-        color: $accent-txt-cl;
-        font-size: 34px;
-    }
+    @media screen and (min-width: 480px) {
+            font-size: 24px;
+        }
 }
 
 .mobile-soclinks{
     display: flex;
     flex-wrap: wrap;
-    gap: 10px;
+    gap: 5px;
+    @media screen and (min-width: 480px) {
+        gap: 10px;
+    }
 }
 
 .mobile-soclinks-link {
     font-family: $font-style-roboto;
     font-weight: 500px;
-    font-size: 18px;
+    font-size: 12px;
     line-height: 22px; 
     letter-spacing: 2%;
     color: $accent-txt-cl;
     display: flex;
+    gap: 5px;
+    @media screen and (min-width:480px) {
     gap: 10px;
+    font-size: 18px;
+    }
     .mobile-soclinks-item:not(:last-child) &::after{
         content: "";
         display: block;
