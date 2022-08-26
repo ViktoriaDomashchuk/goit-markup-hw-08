@@ -920,11 +920,6 @@ img {
   margin-right: 10px;
 }
 
-@media screen and (min-width: 1200px) {
-  .main {
-    max-width: 1600px;
-  }
-}
 .main__container {
   padding: 118px 0;
   margin-left: auto;
