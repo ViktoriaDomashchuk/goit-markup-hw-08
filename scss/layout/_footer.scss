@@ -6,15 +6,18 @@
     padding-bottom: 60px;
     @extend %container;
     flex-direction: column;
+
     @media screen and (min-width: 480px){
         flex-direction: column;
     }
+
     @media screen and (min-width: 768px) {
         flex-direction: row;
         flex-wrap: wrap;
         align-items: baseline;
         justify-content: space-around;
     }
+
     @media screen and (min-width:1200px) {
         display: flex;
         align-items: baseline;
@@ -38,11 +41,13 @@ display: block;
 
 .footer__contacts {
     text-align: center;
-justify-content: center;
-padding-bottom: 60px;
+    justify-content: center;
+    padding-bottom: 60px;
+
 @media screen and (min-width: 768px) {
     justify-content: flex-start;
 }
+
 @media screen and (min-width:1200px) {
     text-align: left;
     padding-bottom: 0;
@@ -50,27 +55,28 @@ padding-bottom: 60px;
 }
 
 .footer__logo {
-display: block;
-margin-bottom: 20px;
-font-weight: 700;
-line-height: 1.19em;
-color: $txt-color;
-font-family: $font-style-raleway;
-&-accent {
+    display: block;
+    margin-bottom: 20px;
+    font-weight: 700;
+    line-height: 1.19em;
+    color: $txt-color;
+    font-family: $font-style-raleway;
+
+    &-accent {
         color: $accent-txt-cl;
     }
-
-@media screen and (min-width: 480px) and (max-width: 1199px) {
-    display: block;
-    font-size: 24px;
-    text-align: center;
-}
-
-@media screen and (min-width: 1200px) {
-    display: inline-block;
-    padding-left: 0;
-    font-size: 26px;
-}
+    
+    @media screen and (min-width: 480px) and (max-width: 1199px) {
+        display: block;
+        font-size: 24px;
+        text-align: center;
+    }
+    
+    @media screen and (min-width: 1200px) {
+        display: inline-block;
+        padding-left: 0;
+        font-size: 26px;
+    }
 }   
 
 .footer__list-address{
@@ -113,8 +119,8 @@ font-family: $font-style-raleway;
     transition: color $animation;
 
     &:active,
-        &:hover,
-        &:focus {
+    &:hover,
+    &:focus {
         color: $txt-color;
     }
 }

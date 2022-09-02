@@ -16,8 +16,8 @@
     transition: background-color $animation;
 
     &:active,
-        &:hover,
-        &:focus {
+    &:hover,
+    &:focus {
         background-color: $accent-txt-cl;
     }
 }

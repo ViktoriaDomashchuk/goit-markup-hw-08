@@ -13,8 +13,8 @@
     transition: background-color $animation, box-shadow $animation;
     
     &:active,
-        &:hover,
-        &:focus {
+    &:hover,
+    &:focus {
         background-color: #188CE8;
         box-shadow: 0px 4px rgba(0, 0, 0, 0.15);
         }

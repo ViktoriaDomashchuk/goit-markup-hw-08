@@ -1,34 +1,35 @@
 .header {
     background-color: $light-bg-cl;
-
-    &__container {
-        @extend %container;
-            display: flex;
-            align-items: center;
-            margin: 0 auto;
-            
-        @media  screen and (min-width: 480px) {
-        min-width: 450px;
-        }
-
-        @media screen and (min-width: 768px) {
-            min-width: 738px;
-        }
-        @media screen and (min-width: 1200px) {
-            width: 1200px;
-        }
-        }
-    
-
-    &__logo {
-        margin-right: 93px;
-        font-size: 26px;
-        line-height: 1.19em;
-        font-family: $font-style-raleway;
-        font-weight: 700;
-        color: #000000;
-    }
 }
+.header__container {
+    @extend %container;
+        display: flex;
+        align-items: center;
+        margin: 0 auto;
+        
+    
+    @media  screen and (min-width: 480px) {
+        min-width: 450px;
+    }
+
+    @media screen and (min-width: 768px) {
+        min-width: 738px;
+    }
+    
+    @media screen and (min-width: 1200px) {
+        width: 1200px;
+    }
+    }
+
+.header__logo {
+    margin-right: 93px;
+    font-size: 26px;
+    line-height: 1.19em;
+    font-family: $font-style-raleway;
+    font-weight: 700;
+    color: #000000;
+}
+
 .header__border {
     border-bottom: 1px solid #ECECEC;  
 }

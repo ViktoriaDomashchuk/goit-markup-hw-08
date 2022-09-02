@@ -1,38 +1,45 @@
 .menu__btn{
     margin-left: auto;
-display: inline-flex;
-align-items: center;
-justify-content: center;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    
+    width: 40px;
+    height: 40px;
+    
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
 
-width: 40px;
-height: 40px;
-
-background-color: transparent;
-border: none;
-cursor: pointer;
-
-@media screen and (min-width: 768px) {
+    @media screen and (min-width: 768px) {
     display: none;
-}
+    }
+
 .menu-overlay & {
     position: absolute;
     top: 10px;
     right: 10px;
 }
+
 }
 .menu-icon{
     fill: #000;
-    &:active, &:hover, &:focus {
-            fill: $accent-txt-cl;
+    &:active, 
+    &:hover, 
+    &:focus {
+        fill: $accent-txt-cl;
         }
 }
+
 .menu-close-icon {
     fill: #000;
-    &:active, &:hover,
-        &:focus{
+    &:active, 
+    &:hover,
+    &:focus{
         fill: $accent-txt-cl;
     }
 }
+
 .menu-overlay{
     position: fixed;
     top: 0;
@@ -51,12 +58,14 @@ cursor: pointer;
     @media screen and (min-width:768px) {
         display: none;
     }
+
     &.is-open{
         opacity: 1;
         pointer-events: initial;
         visibility: visible;
     }
 }
+
 .menu-container{
     width: 100%;
     height: 100%;
@@ -68,19 +77,22 @@ cursor: pointer;
     transition: transform $animation;
 
     .menu-overlay.is-open &{
-transform: translateX(0);
+    transform: translateX(0);
     }
 
     @media screen and (min-width:768px) {
         display: none;
     }
 }
+
 .mobile-nav{
     margin-bottom: auto;
 }
+
 .mobile-nav-item{
     margin-bottom: 32px;
 }
+
 .mobile-nav-link{
     font-family: $font-style-roboto;
     font-weight: 500;
@@ -88,17 +100,21 @@ transform: translateX(0);
     line-height: 47px;
     letter-spacing:  0.02em;
     color: $main-txt-cl;
-    &:active, &:hover,
-     &:focus{
+    &:active, 
+    &:hover,
+    &:focus{
     color: $accent-txt-cl;
     }
 }
+
 .mobile-address{
     margin-bottom: 64px;
 }
+
 .mobile-address-item{
     margin-bottom: 32px;
 }
+
 .mobile-address-tel{
 font-family: $font-style-roboto;
 font-weight: 500; 
@@ -106,10 +122,12 @@ font-size: 24px;
 line-height: 40px; 
 letter-spacing: 0.02em;
 color: $accent-txt-cl;
+
 @media screen and (min-width: 480px) {
     font-size: 34px;
 }
 }
+
 .mobile-address-mail{
     font-family: $font-style-roboto;
     font-weight: 500px;
@@ -117,15 +135,17 @@ color: $accent-txt-cl;
     line-height: 28px;
     letter-spacing: 0.02em;
     color: $secondary-txt-cl;
+
     @media screen and (min-width: 480px) {
-            font-size: 24px;
-        }
+        font-size: 24px;
+    }
 }
 
 .mobile-soclinks{
     display: flex;
     flex-wrap: wrap;
     gap: 5px;
+
     @media screen and (min-width: 480px) {
         gap: 10px;
     }
@@ -140,10 +160,12 @@ color: $accent-txt-cl;
     color: $accent-txt-cl;
     display: flex;
     gap: 5px;
+
     @media screen and (min-width:480px) {
     gap: 10px;
     font-size: 18px;
     }
+    
     .mobile-soclinks-item:not(:last-child) &::after{
         content: "";
         display: block;

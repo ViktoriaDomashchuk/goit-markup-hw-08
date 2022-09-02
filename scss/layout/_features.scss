@@ -2,96 +2,106 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    
-    &__container{
+}
+
+.features__container{
     padding-top: 60px;
     padding-bottom: 60px;
-
+    
     @media screen and (min-width: 1200px){
         padding-top: 94px;
         padding-bottom: 94px;
         width: 1200px;
     }
-    }
-    &__list {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-wrap: wrap;
-        gap: 30px;
-    }
-    
-    &__item {
-        width: 100%;
-        height: 100%;
-        /*height: 226px;*/
-       /* width:450px ;
-        @media screen and (min-width: 480px) {
-            width: 450px;
-        }*/
-        flex-basis: calc((100% - $indent * (1 - 1)) / 1) ;
-
-        @media screen and (min-width:768px) {
-            /*width: 354px; */
-            flex-basis: calc((100% - $indent * (2 - 1)) / 2);
-        }
-
-        @media screen and (min-width: 1200px) {
-            flex-basis: calc((100% - $indent * (4 - 1)) / 4);
-           /*width: 270px;*/
-           height: 248px;
-        }
-        
-    }
-    
-    &__box {
-        display: inline-flex;
-        align-items: center;
-        justify-content: center;
-        margin-bottom: 30px;
-        width: 100%;
-        height: 120px;
-        background-color: #F5F4FA;
-        @media screen and (min-width: 480px) {
-            width: 450px;
-        }
-        @media screen and (min-width: 768px) {
-            width: 354px;
-        }
-        @media screen and (min-width: 1200px) {
-            width: 270px;
-        }
-    }
-    
-    &__icons {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 70px;
-        height: 70px;
-    }
-    
-    &__caption {
-        font-weight: 700;
-        font-size: 10px;
-        line-height: 1.14em;
-        letter-spacing: 0.03em;
-        text-transform: uppercase;
-        color: $main-txt-cl;
-        margin-bottom: 10px;
-        text-align: center;
-        @media screen and (min-width: 480px) {
-            font-size: 14px;
-        }
-        @media screen and (min-width: 768px) {
-           text-align: left;
-        }
-    }
-    
-    &__txt {
-        font-size: 14px;
-        line-height: 1.71em;
-        letter-spacing: 0.03em;
-        color: $secondary-txt-cl;
 }
+
+.features__list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.features__item {
+    width: 100%;
+    height: 100%;
+    @include flex-calc(1);
+    //flex-basis: calc((100% - $indent * (1 - 1)) / 1) ;
+    
+    @media screen and (min-width:768px) {
+        @include flex-calc(2);
+        //flex-basis: calc((100% - $indent * (2 - 1)) / 2);
+    }
+    
+    @media screen and (min-width: 1200px) {
+        @include flex-calc(4);
+        //flex-basis: calc((100% - $indent * (4 - 1)) / 4);
+        height: 248px;
+    }
+}
+
+.features__box {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+    width: 100%;
+    height: 120px;
+    background-color: #F5F4FA;
+
+    @media screen and (min-width: 480px) {
+       width: 450px;
+    }
+
+    @media screen and (min-width: 768px) {
+       width: 354px;
+    }
+
+    @media screen and (min-width: 1200px) {
+       width: 270px;
+    }
+}   
+
+.features__icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70px;
+    height: 70px;
+}
+
+.features__caption {
+    font-weight: 700;
+    font-size: 10px;
+    line-height: 1.14em;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: $main-txt-cl;
+    margin-bottom: 10px;
+    text-align: center;
+
+    @media screen and (min-width: 480px) {
+        font-size: 14px;
+    }
+
+    @media screen and (min-width: 768px) {
+       text-align: left;
+    }
+}
+
+.features__txt {
+    font-size: 14px;
+    line-height: 1.71em;
+    letter-spacing: 0.03em;
+    color: $secondary-txt-cl;
+    width: 450px;
+
+    @media screen and (min-width: 768px) {
+        width: 354px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        width: 270px;
+    }
 }
