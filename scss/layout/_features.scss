@@ -1,13 +1,9 @@
 .features {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.features__container{
     padding-top: 60px;
     padding-bottom: 60px;
-    
+}
+
+.features__container{    
     @media screen and (min-width: 1200px){
         padding-top: 94px;
         padding-bottom: 94px;
@@ -19,23 +15,22 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-wrap: wrap;
     gap: 30px;
 }
 
 .features__item {
     width: 100%;
     height: 100%;
-    @include flex-calc(1);
+    @include flex-calc($indent: 30px, $elements: 1);
     //flex-basis: calc((100% - $indent * (1 - 1)) / 1) ;
     
     @media screen and (min-width:768px) {
-        @include flex-calc(2);
+        @include flex-calc($indent: 30px, $elements: 2);
         //flex-basis: calc((100% - $indent * (2 - 1)) / 2);
     }
     
     @media screen and (min-width: 1200px) {
-        @include flex-calc(4);
+        @include flex-calc($indent: 30px, $elements: 4);
         //flex-basis: calc((100% - $indent * (4 - 1)) / 4);
         height: 248px;
     }

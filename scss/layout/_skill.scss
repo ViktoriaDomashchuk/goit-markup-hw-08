@@ -1,13 +1,9 @@
 .skill {   
-    &__container{
-        @extend %container;
-        padding-top: 0;
-        padding-bottom: 94px;
-    }
+    padding-top: 0;
+    padding-bottom: 94px;    
 
     &__list {
         display: flex;
-        flex-wrap: wrap;
         margin: 0 auto;
         gap: 30px;
         align-items: center;

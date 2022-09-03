@@ -1,7 +1,8 @@
 /*utils styles*/
 @import './utils/variables';
-@import'./utils/visually-hidden';
-@import'./utils/placeholder';
+@import './utils/visually-hidden';
+@import './utils/placeholder';
+@import './utils/mixins';
 
 /*base styles*/
 @import './base/base';
@@ -9,9 +10,9 @@
 
 /*components styles*/
 @import './components/button';
-@import'./components/title';
-@import'./components/logotype';
-@import'./components/soclinks';
+@import './components/title';
+@import './components/logotype';
+@import './components/soclinks';
 @import'./components/footer-soclinks';
 @import'./components/modal';
 @import './components/mobile-menu';
