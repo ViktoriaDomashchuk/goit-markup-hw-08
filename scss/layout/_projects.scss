@@ -2,46 +2,22 @@
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
-    max-width: 450px;
-    margin: 0 auto;
-    padding-bottom: 60px;
-
-    @media screen and (min-width: 768px) {
-        max-width: 738px;
-        
-    }
-    
-    @media screen and (min-width: 1200px) {
-        max-width: 1170px;
-        padding-bottom: 94px;
-    }
-   
 }
+
 .projects__item {
     width: 100%;
-    @include flex-calc;
-    //flex-basis: calc((100% - $indent * (1 - 1)) / 1);
+    @include flex-calc($indent: 30px, $elements: 1);
 
-    @media screen and (min-width: 768px) {
-        @include flex-calc ($indent: 30px,
-            $elements: 2);
-        //flex-basis: calc((100% - $indent * (2 - 1)) / 2);
+    @media screen and (min-width: $tablet) {
+        @include flex-calc($indent: 30px, $elements: 2);
     }
 
-    @media screen and (min-width: 1200px) {
-        @include flex-calc ($indent: 30px,
-            $elements: 3);
-        //flex-basis: calc((100% - $indent * (3 - 1)) / 3);
+    @media screen and (min-width: $desktop) {
+        @include flex-calc($indent: 30px, $elements: 3);
     }
 }
-.projects__img{
-    width: 100%;
-    height: 100%;
-}
+
 .projects__link {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
     height: 100%;
     transition: box-shadow $animation;
 
@@ -73,10 +49,15 @@
     background-color: rgba(33, 150, 243, 0.9);   
     transition: transform $animation;
     backdrop-filter: blur(1px);
+    padding: 49px 24px;
+
+    @media screen and (min-width: $desktop) {
+        padding: 63px 24px;
+    }
 }
 .projects__txt {
     font-weight: 400px;
-    font-size: 12px;
+    font-size: 14px;
     line-height: 28px;
     text-align: left;
     letter-spacing: 0.03em;
@@ -84,7 +65,7 @@
     padding: 63px 24px;
     user-select: none;
     
-    @media screen and(min-width: 480px) {
+    @media screen and (min-width: $mobile) {
     font-size: 18px;
     }
 }
