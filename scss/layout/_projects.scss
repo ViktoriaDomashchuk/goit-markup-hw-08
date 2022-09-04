@@ -49,24 +49,28 @@
     background-color: rgba(33, 150, 243, 0.9);   
     transition: transform $animation;
     backdrop-filter: blur(1px);
-    padding: 49px 24px;
+    padding: 30px;
+
+    @media screen and (min-width: $mobile) {
+        padding: 49px 24px;
+    }
 
     @media screen and (min-width: $desktop) {
         padding: 63px 24px;
     }
 }
 .projects__txt {
-    font-weight: 400px;
+    font-weight: 400;
     font-size: 14px;
-    line-height: 28px;
+    line-height: 26px;
     text-align: left;
     letter-spacing: 0.03em;
     color: $txt-color;
-    padding: 63px 24px;
     user-select: none;
     
     @media screen and (min-width: $mobile) {
     font-size: 18px;
+    line-height: 28px;
     }
 }
 

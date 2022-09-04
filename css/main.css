@@ -39,8 +39,8 @@
 
 /*base styles*/
 body {
-  color: var(--main-txt-cl);
-  font-family: "Roboto", sans-serif;
+  color: #212121;
+  font-family: Roboto, sans-serif;
 }
 
 .link {
@@ -1644,7 +1644,12 @@ img {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   -webkit-backdrop-filter: blur(1px);
           backdrop-filter: blur(1px);
-  padding: 49px 24px;
+  padding: 30px;
+}
+@media screen and (min-width: 480px) {
+  .projects__card--overlay {
+    padding: 49px 24px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .projects__card--overlay {
@@ -1653,13 +1658,12 @@ img {
 }
 
 .projects__txt {
-  font-weight: 400px;
+  font-weight: 400;
   font-size: 14px;
-  line-height: 28px;
+  line-height: 26px;
   text-align: left;
   letter-spacing: 0.03em;
   color: #FFFFFF;
-  padding: 63px 24px;
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
@@ -1668,6 +1672,7 @@ img {
 @media screen and (min-width: 480px) {
   .projects__txt {
     font-size: 18px;
+    line-height: 28px;
   }
 }
 
